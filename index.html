@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Music Discovery App — Team 4</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --background: #f7f6fa;
+      --text: #211a30;
+      --muted: #5d536c;
+      --accent: #563986;
+      --rule: #dfd9e8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font: 1rem/1.5 system-ui, sans-serif;
+    }
+
+    main {
+      width: min(100%, 47rem);
+      margin-inline: auto;
+      padding: clamp(1.5rem, 5vw, 3.5rem);
+    }
+
+    header {
+      padding: clamp(1.25rem, 4vw, 2.25rem);
+      border: 1px solid var(--rule);
+      border-radius: 1.125rem;
+      background: #eee8f8;
+    }
+
+    .team {
+      margin: 0 0 .375rem;
+      color: var(--accent);
+      font-size: .9375rem;
+      font-weight: 650;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.875rem, 6vw, 3rem);
+      font-weight: 750;
+      line-height: 1.1;
+      letter-spacing: -.045em;
+    }
+
+    .sections {
+      margin: 1.375rem 0 0;
+      padding-inline-start: 1.875rem;
+    }
+
+    .sections > li {
+      padding: 1rem 0 1rem .375rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .sections > li::marker {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    h2 {
+      display: inline;
+      font-size: 1.125rem;
+      font-weight: 700;
+    }
+
+    .versions {
+      margin: .25rem 0 0;
+      padding-inline-start: 1.375rem;
+      color: var(--muted);
+      font-size: .9375rem;
+    }
+
+    .versions li + li {
+      margin-top: .25rem;
+    }
+
+    a {
+      display: inline-flex;
+      min-height: 2.75rem;
+      max-width: 100%;
+      align-items: center;
+      color: var(--accent);
+      font-weight: 650;
+      text-underline-offset: .2em;
+    }
+
+    a:hover {
+      color: var(--text);
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: .125rem;
+    }
+
+    footer {
+      margin-top: 1.25rem;
+      color: var(--muted);
+      font-size: .875rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="team">Team 4</p>
+      <h1>Music Discovery App</h1>
+    </header>
+
+    <ol class="sections">
+      <li>
+        <h2>Startup and application introduction</h2>
+      </li>
+      <li>
+        <h2>Slides</h2>
+        <ol class="versions">
+          <li>
+            <!-- After adding slides-assignment-0.pdf next to this page, replace the status with:
+            <a href="slides-assignment-0.pdf" download>Assignment 0 · Download slides (PDF)</a>
+            -->
+            <span>Assignment 0 · PDF pending</span>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <h2>Access the application</h2>
+      </li>
+      <li>
+        <h2>Video</h2>
+        <ol class="versions">
+          <li>
+            <!-- After adding presentation-assignment-0.mp4 next to this page, replace the status with:
+            <a href="presentation-assignment-0.mp4" download>Assignment 0 · Download video (MP4)</a>
+            -->
+            <span>Assignment 0 · Video pending</span>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <h2>Java code of the principle</h2>
+        <ol class="versions">
+          <li><a href="HelloWorld.java" download>Assignment 0 · Download Java source (.java)</a></li>
+        </ol>
+      </li>
+    </ol>
+
+    <footer>Page maintained by Théo</footer>
+  </main>
+</body>
+</html>
